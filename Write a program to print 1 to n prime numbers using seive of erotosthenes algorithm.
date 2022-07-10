@@ -1,0 +1,13 @@
+INPUT:
+n=int(input())
+primes = [False for i in range(n+1)]
+for i in range(2,n):
+    if primes[i] == False:
+        print(i,end=' ')
+        j = 2
+        while j*i<n:
+            primes[j*i] = True
+            j+=1
+OUTPUT:
+100
+2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97
